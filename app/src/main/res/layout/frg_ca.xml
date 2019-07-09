@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/log_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="qerwfqergwerqgjeioropj"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+            
+            <EditText
+                android:id="@+id/edit_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="生成CSR的密钥类型"
+                android:inputType="number"/>
+            
+            <EditText
+                android:id="@+id/edit_times"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="测试次数"
+                android:inputType="number"/>
+            
+            <Button
+                android:id="@+id/btn_start0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/checkin_view_border"
+                android:text="生成CSR"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_start1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/checkin_view_border"
+                android:text="加密解密"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_start2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/checkin_view_border"
+                android:text="签名验签"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
